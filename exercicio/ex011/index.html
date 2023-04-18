@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Atualmente existe vários formatos de telas com resuluções diferentes, e os sites terão que adaptar-se a todas essas resoluções.</p>
+    <p>Lembrando que formatos de imagens gigantes iram demorar bastante para abrir em um smartphone antigo e para piorar a imagem irá toma a tela inteira além disso mecanismo de buscas punem sites sites com taxa de retenção baixa e isso é horrível para quem demorou dias ou até semanas para criar um site.</p>
+    <h2>Imagens Flexíveis</h2>
+    <p>Vamos aprender a gerar imagens de tamanho diferentes e fazer o navegador carregar a imagem certa para a resolução certa.</p>
+    <picture>
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <p>A forma de criar a tag picture e colocar img dentro está certo, porém se a imagem for grande demais ela não caberá no navegador para resolver vamos usar a tag source.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <p>A tag source tem 3 atributos: Type: vai indicar o media type da imagem que usamos. Srcset: vai configurar o nome da imagem que será carregada quando o limite de tamanho for atingida. Media: indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.</p>
+    <p>Para treinamento vou criar outra página com imagens minhas, utilizando imagens flexíveis. Veja a página por esse <a href="exercicio.html" target="_blank" rel="next">link</a>.</p>
+</body>
+</html>

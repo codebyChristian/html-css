@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalisados em CSS</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-size: 2em;
+            color: rgb(255, 123, 0);
+        }
+        h2 {
+            color: rgb(0, 45, 128);
+        }
+        #título-principal {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+        }
+        .topico {
+            text-align: right;
+        }
+        .texto {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="título-principal">Personalisando Seletores</h1>
+    <p>Vamos aprensentar o uso do seletor (id) determinado por (#) ele é utilizado para determinar um único elemento, e o seletor (class) determinado por (.) com esse podemos agrupar elementos com características semelhantes. </p>
+    <h1>Teste de título</h1>
+    <h2 class="topico">HTML5 é semântico</h2>
+    <p class="texto">Para criar um (id), devemos criar dentro da tag (h1) id="nome da variável", deixando claro que isso não alterará o estilo de imediato porque pricisamos utilizar o CSS separadamente.</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="topico">Estilos Web</h2>
+    <p>Para criação da (class) utilizamos o mesmo método para a criação do (id), porém como a (class) é para a utilização de vários elementos é recomendado utilizar em conjunto, pois não há sentido criar uma (class) para determinar apenas um elemento.</p>
+    <p>Para personalisar o id nas CSS precisa identificar por (#) exemplo: #titulo-principal, e com a (class) é parecido muda somente o uso do ponto: .paragrafos-curtos.</p>
+    <h1>Propriedades herdadas</h1>
+    <p>Como vistos anteriormente com as técnicas de estilos: externo, interno, inline que existe uma herárquia a que técnica que prevalece e a inline depois interno e por último a externa. Na configurações personalizadas de (id) e (class) também há nuances.</p>
+    <p>Descrevendo um exemplo: criamos dois (h1), um com (id) e outro solto, então criamos um seletor (h1) para personalisar a cor por não especificar o (h1) com (id) a cor configurada vai aparecer nos dois (h1). Para colocar uma cor diferente na (h1) com id precisamos criar um seletor com o nome do id e especificar a cor.</p>
+    <p>Esse <a href="pseudo.html" target="_self" rel="next">link</a> vai levar para o tema de Pseudo-classes e Pseudo-elementos</p>
+    <p>Para ver o exemplo mais detalhado sobre seletores clique <a href="seletores.html" target="_self" rel="next">aqui</a>.</p>
+</body>
+</html>

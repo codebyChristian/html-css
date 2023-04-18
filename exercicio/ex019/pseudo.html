@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e elementos</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .especial::after {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: "»";
+            font-weight: lighter;
+        }
+
+        .especial::after {
+            content: "«";
+            font-weight: lighter;
+        }
+        
+        .exemplo::after {
+            color:blueviolet;
+            background-color: darkseagreen;
+            text-decoration: solid;
+        }
+
+        .exemplo::before {
+            content: "*";
+            font-weight: lighter;
+        }
+
+        .exemplo::after {
+            content: "*";
+            font-weight: "*";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>Ela é adicionada a declarações de um seletor após o sinal de dois pontos e especificam um estado especial de um elemento. podemos citar :hover, :visited, :active, :checked, :empty e :focus.</p>
+    <h1>Pseudo-elementos</h1>
+    <p> São declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS são ::before, ::after, ::first-letter, ::first-line.</p>
+    <p>Vamos criar links para praticar esses tópicos</p>
+    <p>Para saber como eu fiz isso acesse o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">GitHub do Guanabara</a></p>
+    <p>Para aprender mais elementos, visite o site <a href="https://www.w3c.br" target="_blank" rel="external">Escritório do W3C no Brasil</a></p>
+    <p>Para assistir as melhores aulas sobre tecnologia acesse <a href="https://www.youtube.com/cursoemvideo/" class="especial" target="_blank" rel="external">canal do CursoemVideo</a></p>
+    <p>Se nós visitamos o site antes a cor do link será violeta Por padrão, os navegadores mostram links inéditos em azul e os visitados em violeta. Todos os links também aparecem sublinhados por padrão.</p>
+    <p>Na linha 26, fizemos configurações para todos os links, quando passarmos o mouse por cima (pseudo-classe :hover) e o sublinhado volta a aparecer.</p>
+    <p>Para especificar a class (especial) dizemos que o link da classe especial vai ter letra branca, fundo preto e perderá o sublinhado apenas quando movermos o mouse sobre ele. vamos adicionar um símbolo » antes e outro símbolo « depois usando os pseudo-elementos ::before e ::after, respectivamente.</p>
+    <p>Vamos criar um exemplo especial, veja nesse <a href="exemplo.html" class="exemplo" target="_self" rel="next">link</a>.</p>
+    
+</body>
+</html>

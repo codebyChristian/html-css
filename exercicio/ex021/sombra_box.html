@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras em caixas</title>
+    <style>
+        body {
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: peachpuff;
+
+        }
+
+        article#box {
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px black;
+            border-radius: 10px 30px;
+        }
+        article#texte {
+            background-color: rgba(214, 210, 0, 0.74);
+            width: 350px;
+            margin: auto;
+            padding: 5px 15px;
+            box-shadow: 6px 6px 2px rgba(0, 32, 19, 0.781);
+            border-radius: 5px 5px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin: 30px;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 20px  rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+
+        }
+
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-25px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <article id="box">
+        <h1>Usando sombras</h1>
+        <p>Vamos testar exemplos de sombras com esse exemplo</p>
+    </article>
+    <p><a href="box_model.html" target="_self" rel="prev">Página inicial</a></p>
+    <h2>Adicionando sombra</h2>
+    <p>Utiliza a propriedade box-shadow: exemplo: (box-shadow: 3px 5px 4px black), existe uma ordem de precedência: 1º deslocamento horizontal, sombra para o lado direito, valores negativos vai para esquerda. O 2º deslocamento vertical, sombra para baixo, valores negativos vai para cima. 3º O embaçamento, sombra espalha pelo fundo. 4º A cor, é possível ser transparênte.</p>
+    <h2>Bordas Decoradas</h2>
+    <p>As vértices arredondadas serão determinadas assim: (border-radius:10px), desta forma todas as vértices terão arredondamento em 10px, mas poderá ser colocada separadamente cada vértice dessa forma: (border-radius: 10px 20px 30px 40px) e por último pode ser determinado apenas dois valores, que vai agir de forma intercaladas e sempre partindo do canto superior esquerdo, exemplo:(border-radius: 10px 30px;).</p>
+    <article id="texte">
+        <h1>Texte</h1>
+        <p>Vamos modificar alguns atributos</p>
+    </article>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, recusandae.</p>
+    <div id="bola"></div>
+    <p>Link para borda com <a href="box_03.html" target="_self" rel="next">imagem</a></p>
+</body>
+</html>

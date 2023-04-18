@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com HTML5</title>
+</head>
+<body>
+<h1>Principais Listas</h1>
+<h2>Listas Ordenadas</h2>
+<p>Este tipo de lista a ordem é algo importante, vamos vê um exemplo de listas de serie que mais assisto: Lembrando que o marcador do tipo será o '1', mas há o 'A','a','I' e 'i'.</p>
+<ol type="1" start="2">
+    <li>Ataque dos Titâs</li>
+    <li>Sout Park</li>
+    <li>Rick and Morty</li>
+    <li>Familia da Pesada</li>
+    <li>Simpsons</li>
+</ol>
+<p>Podemos indicar o início da contagem da lista, normalmente pode começa do 1, porém podemos indicar outro inicio para isso vamos usar o parâmetro 'start' que indicarei que iniciará do 2.</p>
+<p>A lista ordenada a tag para criaçaõ é 'OL' e fechamento '/OL'.</p>
+<h2>Lista não Ordenadas</h2>
+<p>Este tipo de lista não leva em consideração a ordem da lista. Vamos vê um exemplo de lista de itens de casa.</p>
+<ul type="square">
+    <li>Mesa</li>
+    <li>Geladeira</li>
+    <li>Armário</li>
+    <li>Cadeira</li>
+</ul>
+<p>Existe três tipos de marcadores o 'disc', 'circle' e o 'square' o exemplo acima é utilizado o 'disc'.</p>
+<p>Para lista não ordenada utilizamos a tag 'UL' e para fechamento a tag '/UL'.</p>
+<h2>Misturando Listas</h2>
+<p>Podemos criar listas mistas, configurando uma dentro da outra.</p>
+<p>Com o que foi visto, precisamos realizar um exércicio: Uma lista aninhada com seus jogos favoritos com a plataforma indicada.</p>
+<ul type="circle">
+    <li>Nintendinho</li>
+    <ol>
+        <li>Mario Bros</li>
+        <ul>
+            <li>Super Mario Bros 3</li>
+            <li>Mario: Lost Levels</li>
+        </ul>
+        <li>Ninja Gaiden</li>
+        <ul>
+            <li>Ninja Gaiden III</li>
+        </ul>
+    </ol>
+    <li>Super Nintendo</li>
+    <ol>
+        <li>Super Mario World</li>
+        <li>Donkey Kong</li>
+        <ul>
+            <li>Donkey Kong Country III</li>
+            <li>Diddy's Kong Quest</li>
+        </ul>
+    </ol>
+    <li>Playstation 1</li>
+    <ol>
+        <li>Final Fantasy</li>
+        <ul>
+            <li>Final Fantasy VII</li>
+            <li>Final Fantasy IX</li>
+        </ul>
+        <li>Castlevania</li>
+        <ul>
+            <li>Simphony of the Night</li>
+        </ul>
+    </ol>
+    <li>Playstation 2</li>
+    <ol>
+        <li>Fifa</li>
+        <ul>
+            <li>Fifa 11</li>
+            <li>Fifa 14</li>
+        </ul>
+        <li>GTA</li>
+        <ul>
+            <li>San Andreas</li>
+        </ul>
+    </ol>
+</ul>
+<h2>Lista de Definição</h2>
+<p>Ela funciona como um dicionário, pois ela apresenta o termo e sua descrição.Vamos observar um exemplo:</p>
+<p>Para a criação da lista de definição precisa da tag 'DL' e fechamento '/DL', a tag do termo é 'DT' e fecha '/DT', para descrição do termo a tag 'DD' e fecha '/DD'. Lembrando que o termo e a descrição fica dentro da tag 'DL'.</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Lingagem de marcação utilizada para criar o conteúdo de sites.</dd>
+    <dt>CSS</dt>
+    <dd>Lingagem de marcação para a especificação de estilos em sites.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para criar interatividades em sites.</dd>
+</dl>
+</body>
+</html>

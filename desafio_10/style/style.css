@@ -1,0 +1,76 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* font-family: 'Ubuntu', sans-serif; */
+@font-face {
+    font-family: Android;
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format(opentype); 
+    font-weight: normal;
+}
+
+
+:root {
+    --color_main: #F2A71B;
+    --color_two: #011F26;
+    --color_three: #A5A692;
+    --color_four: #BFB78F;
+    --color_five: #025E73;
+
+    --font_normal: Arial, Verdana, Helvetica, sans-serif;
+    --font_title: 'Ubunto', sans-serif;
+    --font_android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-width: 400px;
+    max-width: 750px;
+    margin: auto;
+    background-color: var(--color_two);
+    font-family: var(--font_normal);
+}
+
+header {
+    background-color: var(--color_three);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+header > p {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav {
+    background-color: var(--color_four);
+}
+
+nav > a {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+main {
+    background-color: var(--color_main);
+}
+
+main h1 {
+    color: var(--color_two);
+    font-family: var(--font_android);
+}
+
+

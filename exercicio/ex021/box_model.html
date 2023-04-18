@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            width: 450px;
+            height: 50px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 20px;
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: 50px;
+            text-align: center;
+            /* SHORTHAND: 
+            border: 10px solid red;
+            outline: 30px solid blue;
+            Isso reduz o código e faz a mesma coisa */
+        }
+        #exemplo {
+            width: 400px;
+            height: 45px;
+            background-color: rgb(161, 0, 113);     /* Exemplo simplificado */
+            border: 10px solid rgb(247, 252, 0);
+            padding: 20px;
+            outline: 30px solid rgb(0, 238, 255);
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        a {
+            display: block; /*Com isso ele toma a caixa até o fim da tela */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa</h1>
+    <p>Entender o modelo de caixa é importante para o desenvolvimento web, pois todo o conteúdo é mantidos em containers.</p>
+    <p>Todo conteúdo possui width, height, há a border e entre a border e o conteúdo existe o padding e para fora fica a margin.</p>
+    <h1 id="exemplo">Exemplo de Shorthand</h1>
+    <p>Para acessar mais shorthand clique <a href="preencimento.html" target="_self" rel="next">aqui</a>.</p>
+    <h2>Sombras em Caixas</h2>
+    <p>Veja <a href="sombra_box.html" target="_self" rel="prev">aqui</a></p>
+    <p></p>
+</body>
+</html>

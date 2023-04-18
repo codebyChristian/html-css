@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligações em toda parte</title>
+</head>
+<body>
+    <h1>Ligações Usando Hiperlink</h1>
+    <p>O link é a essência fundamental do hipertexto, porque permite ligar documentos entre si e permetir a navegação entre páginas.</p>
+    <h2>Âncora</h2>
+    <p>As âncora permite ligações de um ponto ao outro na World Wide Web.</p>
+    <p>Para criar um hyperlink, devemos criar âncoras através da tag A. O principal atributo dessa tag é o HREF, esta tag coloca o caminho até ela (página) como a URL ou se a página esta no mesmo computador o nome do arquivo.</p>
+    <p>Há outro atributo chamado HREFLANG que determina de qual idioma é o site, para facilitar o navegador a fazer a tradução automática(Não é obrigatório, mas o buscaderes que não fizer isso são punidos).</p>
+    <p>Vamos criar um exemplo:</p>
+    <a href="https://github.com/gustavoguanabara/html-css" hreflang="pt-br" target="_blank" rel="external">
+        Siga o curso pelo perfil no GitHub
+    </a>
+    <h2>Mira no Alvo</h2>
+    <p>Por padrão, sempre que um visitante clica em um hyperlink, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteúdo anterior vai deixar de ser exibido para mostrar o novo conteúdo. Mas isso significa se ele clica em um link na página ele não vai voltar a página de origem? Isso pode acontecer, mas há métodos para controlar o usuário, vamos vê alguns:</p>
+    <ul>
+        <li>_BLANK: vai abrir o link em uma janela em branco</li>
+        <li>_SELF: vai abrir o link na janela ou frame atual (PADRÃO)</li>
+        <li>_TOP: vai abrir o destino no navegador completo</li>
+        <li>_PARENT: similar ao _TOP, indicar o nome da janela a abrir</li>
+    </ul>
+    <p>Deixando um alerta que o uso de frames é uma técnica quase em desuso, vamos criar exemplos apenas do parâmetros _BLANK e _SELF.</p>
+    <p>Primeiro exemplo é com _SELF, ele vai sair da página e abrir outra.</p>
+    <a href="pagina2.html" target="_self"> 
+        Continuar navegando no site
+    </a>
+    <p>Segundo exemplo é com _BLANK, ele vai abrir a página em outra aba.</p>
+    <a href="https://github.com/gustavoguanabara/html-css" target="_blank">
+        Abrir perfil GitHub em nova janela
+    </a>
+    <h2>Esse link é seu ou dos outros?</h2>
+    <p>Existe um recurso para links que indica qual é a natureza do destino usando o atributo REL. Ele aceita vários valores:</p>
+    <ul>
+        <li>NEXT: o link é para a próxima parte do documento atual</li>
+        <li>PREV: o link vai para a parte anterior do ducumento atual</li>
+        <li>AUTHOR: o link vai para o site do autor do artigo atual</li>
+        <li>EXTERNAL: o link vai para outro site que não faz parte do site</li>
+        <li>EXTERNAL: o link vai para um site não endossado, como um link pago</li>
+    </ul>
+    <p>Esse primeiro link é um link local ou interno, já que ele leva o usuário a outra página dentro do nosso próprio site.</p>
+    <a href="pagina2.html" target="_self" rel="next">
+        Continuar navegando no site
+    </a>
+    <p>Já esse link é externo, nesses precisamos indicar a URL completa.</p>
+    <a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="external">
+        Abrir perfil GitHub em nova janela
+    </a>
+    <h2>E para fazer Downloads?</h2>
+    <p>Várias vezes já vimos disponível para downloads arquivos de diferentes formatos. Com a atualização para o HTML5 as âncoras receberam atributos especias para isso.</p>
+    <p> Basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo download com o valor configurado para o nome do arquivo a ser baixado e o atributo type para indicar ao navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:         
+    </p>
+    <a href="desafio.pdf.pdf" download="desafio.pdf.pdf" type="application/pdf">
+        Baixe aqui o PDF do desafio
+    </a>
+    <p>Existem várias media types vou mostrar as mais usadas:</p>
+    <ul>
+        <li>application/zip</li>
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript</li>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+        <li>audio/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png</li>
+    </ul>
+</body>
+</html>

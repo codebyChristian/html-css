@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Imagem</title>
+</head>
+<body>
+    <h1>Teste de imagens flexívis</h1>
+    <p>Bem vindo a esta página para ver o exercício: Let's go!</p>
+    <p>A imagem utilizada neste site é do próprio autor.</p>
+    <picture>
+        <source media="(max-width: 350px)" srcset="imagens/photo-p.jpg" type="image/jpg">
+        <source media="(max-width: 550px)" srcset="imagens/photo-m.jpg" type="image/jpg">
+        <source media="(max-width: 750px)" srcset="imagens/photo-g.jpg" type="image/jpg">
+        <img src="imagens/photo-g.jpg" alt="Alta definição">
+    </picture>
+    <p>Veja se dá certo?</p>
+    <p>Depois que criei imagens de tamanhos e larguras corretos consegui utilizar o HTML para flexíbilizar estas imagens. Caso queira voltar para a página anterior clique <a href="index.html" target="_self" rel="prev">aqui</a>.</p>
+    <h2>Colocando áudios</h2>
+    <p>Nesta mesma página vamos aprender a colocar áudio em sites, para isso devemos usar a tag AUDIO e alguns SOURCE para tocar qualquer áudio.<p>
+    <p>Depois da tag AUDIO há o PRELOAD e ele tem 3 atributos são eles: METADATA: carrega informações do arquivo como tamanho, tempo etc. NONE: O usuário terá que clicar no play para iniciar o áudio. AUTO: Vai carregar o áudio assim que a página abrir.</p>
+    <p>Depois de escolher o atributo do PRELOAD vem CONTROLS: que apresentar o player de áudio na tela. Outro atributo do audio é o AUTOPLAY: vai iniciar a reprodução do áudio quando a página for carregada. E o último é o LOOP: faz com que o áudio repita infinitamente.</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/dyalla.mp3" type="audio/mpeg">
+        <source src="midias/dyalla.ogg" type="audio/ogg">
+        <source src="midias/dyalla.wav" type="audio/wav">
+        <p>Caso o navegador não suporta o áudio <a href="midias/dyalla.mp3" download="dyalla.mp3" type="audio/mpeg">clique aqui</a>.</p>
+    </audio>
+    <p>Carregamos vários formatos de áudio diferentes, a tag SOURCE serve para isso caso a primeira opção não funcione a tag de baixo com outro formato de áudio irá ser carregada, e por último adicioamos um link para download caso nenhum formato de áudio funcione. Thanks!</p>
+</body>
+</html>

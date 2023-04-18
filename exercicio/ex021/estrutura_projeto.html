@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de projeto</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: mediumseagreen;
+            margin: 0px;
+
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(54, 54, 54);
+            padding: 3px;
+            
+        }
+
+        nav > a {
+            text-decoration: none;    /* ctrl com duas teclas diferentes comenta um determinado lugar selecionado */
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;  /* Margem de espaçamento */
+            
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+
+        }
+
+        article > aside {
+            background-color: rgb(133, 133, 133);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px ;
+            margin: 0px;
+            box-shadow: 1px 5px 10px rgb(18, 123, 243);
+            border-radius: 35px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a>  
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur saepe dolorem. Illo, sit a omnis error laborum inventore ipsa consectetur quae vitae quis. Deleniti odit distinctio perspiciatis mollitia, repudiandae iusto! Iste, veniam. Numquam nihil, iure earum incidunt tempore eius autem delectus temporibus necessitatibus fugiat tenetur quas, quos id.</p>
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    conteúdo periférico do site
+                </aside>
+            </article>
+        </section>
+        <aside>
+            conteúdo periférico  do site
+        </aside>
+    </main>
+    <footer>
+        Desenvolvido por chris
+    </footer>
+</body>
+</html>
