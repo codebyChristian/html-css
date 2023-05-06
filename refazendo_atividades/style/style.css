@@ -38,14 +38,14 @@ body {
 
 header {
     background-color: var(--color_three);
-    padding: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
 header > h1 {
     text-align: center;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px;
     
 }
 
@@ -57,6 +57,8 @@ header > p {
 
 nav {
     background-color: var(--color_four);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 nav > a {
@@ -66,11 +68,21 @@ nav > a {
 
 main {
     background-color: var(--color_main);
+    padding: 0px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
 }
 
 main h1 {
     color: var(--color_two);
     font-family: var(--font_android);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 
