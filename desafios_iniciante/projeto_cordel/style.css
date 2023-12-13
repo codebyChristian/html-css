@@ -10,9 +10,35 @@
 }
 
 :root {
-
+    --cor01: #ffffff;
+    --cor02: #000000;
 
     --font-title: 'Rubik Mono One', monospace;
     --font-content: 'Roboto', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor02);
+    min-height: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+header > h1 {
+    color: var(--cor01);
+    font-family: var(--font-title);
+    font-size: 6em;
+    font-weight: inherit;
+}
+
+header > p {
+    color: var(--cor01);
 
 }
