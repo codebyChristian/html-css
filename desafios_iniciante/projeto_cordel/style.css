@@ -21,14 +21,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 header {
     background-color: var(--cor02);
-    min-height: 200px;
+    color: var(--cor01);
     text-align: center;
-    padding: 20px;
-    margin: auto;
 }
 
 header > h1 {
@@ -38,15 +37,27 @@ header > h1 {
     font-weight: inherit;
     word-spacing: -50px;
     letter-spacing: -5px;
-    padding: 30px 0px 0px 0px;
+    padding-top: 50px;
 }
 
 header > p {
     color: var(--cor01);
+    padding-bottom: 50px;
     
 }
 
-main > section > p {
+section {
+    padding: 50px 0px 100px 32px;
+    background-color: #aa7979;
+}
+
+section > p {
     font-family: var(--font-content);
-    font-size: 6vw;
+    font-size: 4vw;
+    
+    
+}
+
+.back-white {
+    background-color: var(--cor01);
 }
