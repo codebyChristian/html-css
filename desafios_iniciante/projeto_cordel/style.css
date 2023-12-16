@@ -28,15 +28,14 @@ header {
     background-color: var(--cor02);
     color: var(--cor01);
     text-align: center;
+
 }
 
 header > h1 {
     color: var(--cor01);
     font-family: var(--font-title);
-    font-size: 6em;
+    font-size: 10vw;
     font-weight: inherit;
-    word-spacing: -50px;
-    letter-spacing: -5px;
     padding-top: 50px;
 }
 
@@ -48,7 +47,7 @@ header > p {
 
 section {
     padding: 50px 0px 100px 32px;
-    background-color: #aa7979;
+    
 }
 
 section > p {
@@ -58,6 +57,33 @@ section > p {
     
 }
 
-.back-white {
-    background-color: var(--cor01);
+
+#back-image-first {
+    background-image: url('images/three-bees-on-cordel.WebP');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#back-image-second {
+    background-image: url('images/open-book-cordel.WebP');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blur-for-images {
+    background-color: rgba(128, 128, 128, 0.322);
+    width: fit-content;
+}
+
+footer {
+    background-color: var(--cor02);
+    color: var(--cor01);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: var(--font-content);
+    font-size: 1em;
 }
