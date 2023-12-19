@@ -24,6 +24,10 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: var(--cor02);
     color: var(--cor01);
@@ -39,7 +43,7 @@ header > h1 {
     color: var(--cor01);
     font-family: var(--font-title);
     font-size: 10vw;
-    font-weight: inherit;
+    font-variant: small-caps;
     padding-top: 50px;
 }
 
@@ -50,14 +54,21 @@ header > p {
 }
 
 section {
-    padding: 50px 0px 50px 32px;
-    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 8vw;
+}
+
+.back-white {
+    background-color: var(--cor01);
+    color: var(--cor02);
 }
 
 section > p {
     font-family: var(--font-content);
     font-size: 4vw;
-    line-height: 8vw;
+    
 }
 
 
@@ -82,22 +93,15 @@ section > p {
     width: fit-content;
 }
 
-footer {
-    background-color: var(--cor02);
-    color: var(--cor01);
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    font-family: var(--font-content);
-    font-size: 1em;
-}
 
-a {
+
+header a, footer a {
     color: var(--cor01);
     font-weight: bolder;
     text-decoration: none;
 }
 
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -107,4 +111,14 @@ a:hover {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+
+footer {
+    background-color: var(--cor02);
+    color: var(--cor01);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: var(--font-content);
+    font-size: 1em;
 }
