@@ -6,6 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+
+    <style>
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.color {
+            background-color: aquamarine;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td.linha {
+            background-color: rgba(46, 54, 37, 0.144);
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Tabela</h1>
@@ -18,25 +45,32 @@
     -->
 
     <table>
-        <tr>
+        <tr>  <!--Primeira linha-->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr>
+        <tr>  <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>B2</td>
         </tr>
-        <tr>
+        <tr class="color">  <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr>
+        <tr>  <!--Quarta linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
+        </tr>
+        <tr>
+            <td class="linha">A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
         </tr>
     </table>
 </body>
