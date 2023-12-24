@@ -15,7 +15,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            
+            position: relative;
         }
 
        
@@ -34,6 +34,14 @@
         thead, tfoot {
             background-color: rgb(92, 87, 87);
             color: white;
+        }
+
+        /* Deixar o cabeçalho fixo na rolagem de tela */
+
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background: rgb(92, 87, 87);
         }
 
         tbody > tr:nth-child(even) {  /*  2n -1*/
