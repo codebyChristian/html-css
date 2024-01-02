@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Usando Iframe!</h1>
+    </header>
+    <main>
+        <p>Acessando o site do
+            <!--Tamanho do Iframe: 300x150-->
+            <iframe src="https://www.cursoemvideo.com" frameborder="1" height="500px" scolling="no">
+                <a href="https://www.cursoemvideo.com" target="_blank" rel="author">Cursoemvideo</a>
+            </iframe>
+            para estudar!</p>
+        <p>O site do <iframe src="https://www.google.com" frameborder="0">
+            Essa mensagem somente aparecerá se o navegador não suporta Iframe.
+        </iframe> </p>
+        <p>Não é aberto porque há proteção de contéudo.</p>
+        <h2>Explicação</h2>
+        <p>O <strong>Iframe</strong> cria um bloco inline que não quebra a frase, mesmo que o elemento tenha uma altura diferente. Há a possibilidade de alterar o tamanho por meio do <strong>HTML</strong> e <strong>CSS</strong>.</p>
+
+        <p>
+            O repositório do curso está no
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500px">
+                <a href="https://gustavoguanabara.github.io" target="_blank" rel="author">GitHub</a>
+            </iframe>
+        </p>
+
+        <p>A CSS são sobreranas na determinações de estilos, caso não seja configurado valerá que estão no HTML.</p>
+    </main>
+</body>
+</html>
