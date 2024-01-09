@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascripts</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javascripts</h1>
+    </header>
+    <main>
+        <a href="#" onclick="clicou()">Clique aqui</a>
+        <div id="saida">
+
+        </div>
+    </main>
+
+    <script>
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p> Você perdeu </p>'
+        }
+    </script>
+</body>
+</html>
