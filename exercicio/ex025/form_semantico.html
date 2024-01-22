@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        main {
+            min-width: 800px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            padding: 20px;
+            word-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulários Semântico</h1>
+    </header>
+    <aside>
+        <form action="cadastro.php">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="inomesobre">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="inomesobre">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+
+        <main>
+            <h1>Explicação</h1>
+            <p>
+                Na forma semântica, o <strong>input</strong> sempre vem acompanhado de um label, ele faz a ligação entre o campo nome e a caixa que irá receber o nome. Dentro do label há o parâmetro <strong>for</strong> que pode receber quanto name ou id do input, neste caso utilizamos o id.
+            </p>
+        </main>
+        
+    </aside>
+</body>
+</html>
