@@ -21,7 +21,7 @@
         <h1>Formulários Semântico</h1>
     </header>
     <aside>
-        <form action="cadastro.php">
+        <form action="cadastro.php" method="post">
             <p>
                 <label for="inome">Nome:</label>
                 <input type="text" name="nome" id="inome">
@@ -40,6 +40,25 @@
             <p>
                 Na forma semântica, o <strong>input</strong> sempre vem acompanhado de um label, ele faz a ligação entre o campo nome e a caixa que irá receber o nome. Dentro do label há o parâmetro <strong>for</strong> que pode receber quanto name ou id do input, neste caso utilizamos o id.
             </p>
+
+            <h1>GET vs POST</h1>
+            <h2>GET</h2>
+            <p>As informações colocados no formalários ficam visíveis na url.</p>
+            <p>Quando utilizar:</p>
+            <ul>
+                <li>Dados não sensíveis</li>
+                <li>Formulários simples</li>
+                <li>Não ultrapassar 3.000 bytes</li>
+                <li>Apenas texto</li>
+            </ul>
+            <h2>POST</h2>
+            <p>As informações ficam escondidas, mas podem ser encontradas pelo DevTools</p>
+            <p>Quando utilizar:</p>
+            <ul>
+                <li>Dados sensíveis</li>
+                <li>Enviar dados acima de 3.000 bytes</li>
+                <li>Enviar outros tipos de arquivos</li>
+            </ul>
         </main>
         
     </aside>
