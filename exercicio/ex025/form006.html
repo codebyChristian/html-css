@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Elementos input</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post">
+
+            <p>
+                <label for="cor1">Cor</label>
+                <input type="color" name="cor" id="cor1" value="#00aa11">
+            </p>
+
+            <p>
+                <label for="livel1">Nível do Conteúdo</label>
+                <input type="range" name="livel" id="livel1" min="0" max="10" value="3">  
+            </p>
+
+            <p>
+                <label for="foto1">Foto de Perfil</label>
+                <input type="file" name="foto1" id="foto">
+            </p>
+
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
