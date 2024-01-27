@@ -9,21 +9,37 @@
 </head>
 <body>
     <header>
-        <h1>Novos inputs</h1>
+        <h1>Novos inputs com checkbox</h1>
     </header>
     <main>
         <form action="cadastro.py" method="get" autocomplete="">
 
             <fieldset>
                 <legend>Filmes</legend>
-                <input type="checkbox" name="moviemt" id="imoviemt"> Matriz 1999<br>
-                <input type="checkbox" name="movieha" id="imovieha"> Homem-Aranha 2001<br>
-                <input type="checkbox" name="moviets" id="imoviets"> Toy Story 1995<br>
-                <input type="checkbox" name="moviets" id="imoviets"> Rei Leão 1994<br>
-                <input type="checkbox" name="moviets" id="imoviets"> Curiosa 2019<br>
-                <input type="checkbox" name="moviets" id="imoviets"> A Cor Púrpura 1985<br>
-                <input type="checkbox" name="moviets" id="imoviets"> Oppenheimer 2023
+              
+                <input type="checkbox" name="moviemt" id="moviemt1" checked> 
+                <label for="moviemt1">Matriz 1999</label><br>
+             
+                <input type="checkbox" name="moviemt" id="moviemt2"> 
+                <label for="moviemt2">Homem-Aranha 2001</label> <br>
+            
+                <input type="checkbox" name="moviemt" id="moviemt3"> 
+                <label for="moviemt3">Toy Story 1995</label> <br>
+
+                <input type="checkbox" name="moviemt" id="moviemt4">
+                <label for="moviemt4">Rei Leão 1994</label> <br>
+          
+                <input type="checkbox" name="moviemt" id="moviemt5"> 
+                <label for="moviemt5">Curiosa 2019</label> <br>
+            
+                <input type="checkbox" name="moviemt" id="moviemt6">
+                <label for="moviemt6">A Cor Púrpura 1985</label> <br>
+               
+                <input type="checkbox" name="moviemt" id="moviemt7"> 
+                <label for="moviemt7">Oppenheimer 2023</label>
+
             </fieldset>
+
 
             <p>
                 <input type="submit" value="Enviar">
@@ -38,23 +54,42 @@
         <form action="cadastro.py" method="get">
 
             <fieldset>
+                <legend>Sexo</legend>
+                
+                <input type="radio" name="sexo" id="mas" value="M" checked>
+                <label for="mas">Masculino</label> <br>
+
+                <input type="radio" name="sexo" id="fem" value="F">
+                <label for="fem">Feminino</label>
+            </fieldset>
+
+            <fieldset>
                 <legend>Tipo Sanguinio</legend>
-                <label for="stipo">Tipo A+</label>
-                <input type="radio" name="tipos" id="stipo"><br>
-                <label for="stipoa">Tipo A-</label>
-                <input type="radio" name="tipos" id="stipoa"><br>
-                <label for="stipob">Tipo B+</label>
-                <input type="radio" name="tipos" id="stipob"><br>
-                <label for="stipobb">Tipo B-</label>
-                <input type="radio" name="tipos" id="stipobb"><br>
-                <label for="stipoab">Tipo AB+</label>
-                <input type="radio" name="tipos" id="stipoab"><br>
-                <label for="stipoabab">Tipo AB-</label>
-                <input type="radio" name="tipos" id="stipoabab"><br>
-                <label for="stipoo">Tipo O+</label>
-                <input type="radio" name="tipos" id="stipoo"><br>
-                <label for="stipooo">Tipo O+</label>
-                <input type="radio" name="tipos" id="stipooo">
+
+                <input type="radio" name="tipos" id="stipo" value="A+" checked>   
+                <label for="stipo">Tipo A+</label> <br>
+
+                <input type="radio" name="tipos" id="stipoa" value="A-">
+                <label for="stipoa">Tipo A-</label> <br>
+                
+                <input type="radio" name="tipos" id="stipob" value="B+">
+                <label for="stipob">Tipo B+</label> <br>
+                
+                <input type="radio" name="tipos" id="stipobb" value="B-">
+                <label for="stipobb">Tipo B-</label> <br>
+                
+                <input type="radio" name="tipos" id="stipoab" value="AB+">
+                <label for="stipoab">Tipo AB+</label> <br>
+                
+                <input type="radio" name="tipos" id="stipoabab" value="AB-">
+                <label for="stipoabab">Tipo AB-</label> <br>
+                
+                <input type="radio" name="tipos" id="stipoo" value="O+">
+                <label for="stipoo">Tipo O+</label> <br>
+                
+                <input type="radio" name="tipos" id="stipooo" value="O-">
+                <label for="stipooo">Tipo O-</label>
+
             </fieldset>
         </form>
     </aside>
