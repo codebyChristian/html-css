@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" method="get">
+
+            <p>
+                <label for="ivalor">Número: </label>
+                <input type="range" name="valor" id="ivalor" min="0" max="10" value="5"
+                oninput="ival.innerHTML = Number(ivalor.value)">
+                <output id="ival">5</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
