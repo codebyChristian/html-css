@@ -1,5 +1,88 @@
 @charset "UTF-8";
 
-/* Outras telas */
+/* Outras telas
+Pesquise: Typical Device Breakpoints;
+Para ter medidas de resoluções ideais acesse W3C
 
+*/
+
+@media print {   /* IMPRESSÃO */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-impressora.jpg);  /* Em impressora não mostrará imagem de fundo */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa configuração de impressão foi mostrada pelo Professor Guanabara';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 400px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {  /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {   /* TELAS GRANDES */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+}
 
