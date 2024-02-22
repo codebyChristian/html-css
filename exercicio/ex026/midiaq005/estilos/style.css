@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#burger {
+    background-color: rgba(0, 0, 0, 0.37);
     display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 
 }
 
@@ -60,3 +74,6 @@ article > p {
     text-align: justify;
     margin-bottom: 16px;
 }
+
+
+
