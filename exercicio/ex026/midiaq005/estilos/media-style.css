@@ -14,4 +14,9 @@
         display: inline-block;
         width: 100px;
     }
+
+    main {
+        width: 720px;
+    }
 }
+
