@@ -8,6 +8,8 @@
 
 body {
     background-color: #F5B15F;
+    background: url(../imagens/sugar-coffee.jpg) no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -66,18 +68,25 @@ main {
 }
 
 article {
-    background: url(../imagens/sugar-coffee.jpg) no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to right, #E8AA64, #C47924);
+    border-radius: 10px;
 }
 
 article > h2 {
-    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
 }
 
 article > p {
     text-indent: 20px;
     text-align: justify;
     margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    /*Contraste: 6.11 : 1 /*
 }
 
 
