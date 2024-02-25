@@ -60,14 +60,28 @@ menu > ul > li > a:hover {
 }
 
 main {
-    background: url(../imagens/sugar-coffee.jpg) no-repeat;
-    background-size: cover;
+    
     width: 90vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
     
     border-radius: 10px;
+}
+
+section {
+    padding-bottom: 10px;
+}
+
+section#coffee {
+    background: url(../imagens/sugar-coffee.jpg) no-repeat;
+    background-size: cover;
+}
+
+section#alcool {
+    background: url(../imagens/alcool.jpg) no-repeat;
+    background-size: cover;
+    
 }
 
 article {
