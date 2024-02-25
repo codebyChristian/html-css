@@ -91,5 +91,14 @@ article > p {
     
 }
 
+.blur-text {
+    background-color: rgba(128, 128, 128, 0.37);  
+    
+}
+
+.bluer-images {
+    box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.616);
+}
+
 
 
