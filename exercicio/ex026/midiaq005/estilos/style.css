@@ -64,21 +64,20 @@ menu > ul > li > a:hover {
 }
 
 main {
-    
+    border-radius: 10px;
     width: 90vw;
-    background-color: white;
     margin: auto;
     margin-top: 10px;
-    
-    border-radius: 10px;
 }
 
-
+section {
+    border-radius: 10px;
+}
 
 section#coffee {
     background: url(../imagens/sugar-coffee.jpg) no-repeat;
     background-size: cover;
-    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 section#alcool {
@@ -95,6 +94,7 @@ section#horror {
 }
 
 article {
+    border-radius: 10px;
     color: #1F0404;
 }
 
