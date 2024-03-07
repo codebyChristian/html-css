@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor_fundo: rgb(0, 68, 124);
+}
+
+body {
+    background-color: var(--cor_fundo);
+}
+
+form {
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+}
+
+div.fora {
+    position: relative;
+    
+}
+
+div.dentro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
