@@ -11,17 +11,26 @@
     
     <form action="login.php" method="post">
         <fieldset>
-            <legend>
-                Faça login
-            </legend>
+            
+            <h3>Faça login</h3>
 
-            <label for="iemail">Imagem</label>
-            <input type="email" name="email" id="iemail" required>
+            <div>
+                <label for="iemail"><img src="imagens/perfil-de-usuario.png" alt="Foto de usuário">
+                </label>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu email" required>
+            </div>
 
-            <label for="isenha">Imagem</label>
-            <input type="password" name="senha" id="isenha" required>
+            <div>
+                <label for="isenha"><img src="imagens/senha.png" alt="Foto de cadeado"></label>
+                <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
+            </div>
 
         </fieldset>
+
+        <div>
+            <input type="submit" value="Entrar">
+        </div>
+
     </form>
 
 </body>
