@@ -11,13 +11,16 @@
 
 body {
     background-color: var(--cor_fundo);
+    background: url('../imagens/wood-blackground.jpg');
 }
 
 form {
+    background: url('../imagens/wall-paper.jpg');
     margin: auto;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 500px;
     background-color: white;
+    border-radius: 10px;
 }
 
 div.fora {
@@ -29,5 +32,15 @@ div.dentro {
     position: absolute;
     top: 50%;
     left: 50%;
-    
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+form > h3 {
+    text-align: center;
+    padding: 8px;
+}
+
+form > p {
+    padding: 8px;
 }
