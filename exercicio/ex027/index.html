@@ -15,22 +15,25 @@
         <div class="dentro">
             
             <form action="login.php" method="post">
-        
+
+                <img class="img-phone" src="imagens/wall-paper.jpg" alt=""Imagem de uma parede>
+
                 <h3>Faça login</h3>
                 <p>Bem-vindo à nossa plataforma! Para acessar nossos serviços, insira seu email e senha abaixo. Estamos felizes em tê-lo(a) conosco!</p>
-                <div>
-                    <label for="iemail"><img src="imagens/perfil-de-usuario.png" alt="Foto de usuário">
+
+                <div class="login-user">
+                    <label for="iemail"><img class="img-login-user" src="imagens/perfil-de-usuario.png" alt="Foto de usuário">
                     </label>
                     <input type="email" name="email" id="iemail" placeholder="Digite seu email" required>
                 </div>
-                <div>
+                <div class="login-user">
                     <label for="isenha"><img src="imagens/senha.png" alt="Foto de cadeado"></label>
                     <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
                 </div>
-                <div>
+                <div class="enter-user">
                     <input type="submit" value="Entrar">
                 </div>
-                <div>
+                <div class="forget-pass">
                     <button type="button">Esqueci a senha <img src="imagens/cadeado.png" alt="Imagem de um cadeado"></button>
                 </div>
             </form>
