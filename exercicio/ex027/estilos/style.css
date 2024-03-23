@@ -21,7 +21,8 @@ body {
 
 
 .img-phone {
-    width: 300px;
+    display: block;
+    width: 250px;
     height: 170px;
     border-radius: 10px 10px 0px 0px;
 }
@@ -34,12 +35,17 @@ main.fora {
 }
 
 main > div.dentro {
+    display: block;
+    width: 250px;
+    height: 545px;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.685);
 }
 
 form > h3 {
@@ -52,6 +58,7 @@ form > p {
 }
 
 div.login-user {
+    display: block;
     background-color: blue;
     margin-left: 10px;
     margin-right: 10px;
@@ -80,11 +87,34 @@ div.login-user {
     text-align: center;
 }
 
-.forget-pass {
-    background-color: rgb(250, 250, 250);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 4px;
-    padding: 2px;
+form > input[type=submit] {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-primaria-dark);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor-primaria);
+}
+
+form > .botao {
+    display: block;
     text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: var(--cor-primaria);
+    width: 100%;
+    height: 40px;
+    border: solid 1px var(--cor-primaria-dark);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+form > .botao:hover {
+    background-color: #F2A007;
 }
