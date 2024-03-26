@@ -22,7 +22,7 @@ body {
 
 .img-phone {
     display: block;
-    width: 250px;
+    width: 280px;
     height: 170px;
     border-radius: 10px 10px 0px 0px;
 }
@@ -36,7 +36,7 @@ main.fora {
 
 main > div.dentro {
     display: block;
-    width: 250px;
+    width: 280px;
     height: 545px;
     background-color: white;
     position: absolute;
@@ -48,30 +48,32 @@ main > div.dentro {
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.685);
 }
 
-form > h3 {
+form > div > h3 {
     text-align: center;
     padding: 8px;
 }
 
-form > p {
+form > div > p {
     padding: 8px;
 }
 
-div.login-user {
-    display: block;
-    background-color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 4px;
-    padding: 2px;
-    border-radius: 10px;
-}
 
-div.login-user {
+
+div.login-user > input{
     background-color: var(--cor-contrast);
     height: 100%;
-    width: calc(100% - 44px);
+    width: calc(100% - 59px);
+    display: block;
+    margin-left: 37px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-35px);
+    
 }
+
+
 
 .img-login-user {
     width: 30px;
@@ -87,7 +89,7 @@ div.login-user {
     text-align: center;
 }
 
-form > input[type=submit] {
+form > div > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -98,11 +100,11 @@ form > input[type=submit] {
     border-radius: 4px;
 }
 
-form > input[type=submit]:hover {
+form > div > input[type=submit]:hover {
     background-color: var(--cor-primaria);
 }
 
-form > .botao {
+form > div > .botao {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -115,6 +117,16 @@ form > .botao {
     margin-top: 10px;
 }
 
-form > .botao:hover {
+form > div > .botao:hover {
     background-color: #F2A007;
+}
+
+div.space {
+    padding: 8px;
+}
+
+.immg {
+    padding-top: 5px;
+    width: 20px;
+    height: 20px;
 }
